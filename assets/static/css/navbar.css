@@ -1,0 +1,49 @@
+nav div.bar{
+    display:            flex;
+    align-items:        left;
+    flex-wrap:          wrap;
+}
+
+
+header nav ul {
+    list-style:         none;
+    margin:             0;
+    padding:            0;
+}
+
+
+header nav{
+    margin-bottom:      20px;
+}
+
+
+header nav div.nav-link{
+    padding-right:      20px;
+    font-size:          130%;
+}
+
+
+nav a.lang-select, nav a.nav_link{
+    color:              #444;
+    text-decoration:    none;
+
+}
+
+nav a.lang-select img{
+    position:           relative;
+    top:                4px;
+}
+
+nav div.nav-link a.nav_link_active, nav a.nav_lang_active{
+    font-weight:        bold;
+}
+
+nav div.nav-link a.nav_link_active{
+
+    text-decoration:    underline;
+}
+
+.flex-nav-filler{
+    flex-grow:          1000000; 
+    /* just a really big number to make sure it allways takes up as much space as possible*/
+}

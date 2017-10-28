@@ -1,0 +1,71 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/navbar.css'|url }}">
+<title>{% block title %}Welcome{% endblock %} — Alge.se</title>
+<body>
+  <header>
+    <nav>
+      <div class = "bar">
+
+        {# The different navbar alternatives given language #}
+
+        {# Swedish #}
+        {% if alt == "se" %}
+
+          {% set nav_list = 
+            [ 
+              ['/', 'HEM'],
+              ['/blog', 'BLOG'],
+              ['/projects', 'PROJEKT'],
+              ['/contact', 'KONTAKT']
+            ] 
+          %}
+
+        {% endif %}
+
+        {# English #}
+        {% if alt == "en" %}
+
+          {% set nav_list = 
+            [ 
+              ['/', 'HOME'],
+              ['/blog', 'BLOG'],
+              ['/projects', 'PROJECTS'],
+              ['/contact', 'CONTACT']
+            ] 
+          %}
+        {% endif %}
+
+        {# Use the nav_list variable to generate the navigation menu #}
+
+        {% for href, title in nav_list %}
+
+          {# Check if this is the active page #}
+          <div class = "nav-link">
+            <a class="nav_link
+            {% if (this.is_child_of(href)) and href != '/' or href == '/' and this._path == '/'%}nav_link_active{% endif %}       {# Add the active class to the active link #}
+            " href="{{ href|url }}">{{ title }}</a>
+          </div>
+        {% endfor %}
+
+        <div class = "flex-nav-filler"></div>
+
+        <div class = "nav-lang"><a class = "lang-select {% if alt == "se" %}nav_lang_active{% endif %}" href="{{ '.'|url(alt='se') }}">Svenska <img src="/static/images/header/flag_se.png" width="25px"></a></div>
+        <div class = "nav-lang"><a class = "lang-select {% if alt == "en" %}nav_lang_active{% endif %}" href="{{ '.'|url(alt='en') }}">English <img src="/static/images/header/flag_uk.png" width="25px"></a></div>
+
+
+      </div>
+    </nav>
+    
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    <hr class="yellow-hr">
+    <span class="footer-content">
+      &copy; Copyright 2017 by Martin Alge
+    </span>
+  </footer>
+</body>

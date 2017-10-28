@@ -1,0 +1,45 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 50px 25px;
+    width: 700px;
+    background:         #fff;
+    margin-left:        auto;
+    margin-right:       auto;
+}
+
+a {
+    color: #2a99b6;
+}
+
+a:hover {
+    color: #33bbdf;
+}
+
+    
+div.page {
+    background:         #fff;
+}
+
+
+h2.page-title{
+    padding-bottom:     4px;
+}
+
+
+hr.yellow-hr{
+    border-style:       solid;
+    width:              150px;
+    height:             2px;
+    margin:             0px;
+    border-color:       #facc00;/*All three seems to be needed for different browsers...*/
+    color:              #facc00;
+    background-color:   #facc00;
+}
+
+
+span.footer-content{
+    padding-top: 20px;
+    display: block;
+}
+
+

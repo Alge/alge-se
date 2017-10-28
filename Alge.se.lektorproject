@@ -1,0 +1,14 @@
+[project]
+name = Alge.se
+url = http://www.alge.se
+locale = se
+
+[alternatives.se]
+name = "Svenska"
+primary = yes
+locale = se
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en_US

@@ -1,3 +1,5 @@
 title: Alge.se
 ---
-body: Det här är en hemsida
+body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis elit felis, at facilisis diam fermentum non. Morbi et erat ac tortor lacinia luctus. Mauris tortor felis, pharetra a lacinia quis, volutpat ut ligula. Maecenas enim libero, venenatis non vestibulum et, scelerisque ac risus. Maecenas iaculis magna eget tortor consectetur rutrum. Integer pellentesque turpis non lacinia faucibus. Donec elit arcu, faucibus sit amet fermentum vel, volutpat sed velit. Phasellus in urna diam.
+---
+_template: mainpage.html

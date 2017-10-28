@@ -34,6 +34,11 @@ nav a.lang-select img{
     top:                4px;
 }
 
+nav a.lang-select{
+    margin-left:        5px;
+    font-size:          70%;
+}
+
 nav div.nav-link a.nav_link_active, nav a.nav_lang_active{
     font-weight:        bold;
 }

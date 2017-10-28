@@ -29,11 +29,23 @@ h2.page-title{
 hr.yellow-hr{
     border-style:       solid;
     width:              150px;
-    height:             2px;
+    height:             1px;
     margin:             0px;
+    margin-top:         20px;
     border-color:       #facc00;/*All three seems to be needed for different browsers...*/
     color:              #facc00;
     background-color:   #facc00;
+}
+
+hr.gray-hr{
+    border-style:       solid;
+    width:              150px;
+    height:             1px;
+    margin:             0px;
+    margin-top:         20px;
+    border-color: #b0b0b0;/*All three seems to be needed for different browsers...*/
+    color: #b0b0b0;
+    background-color: #b0b0b0;
 }
 
 
